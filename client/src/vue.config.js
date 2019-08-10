@@ -1,7 +1,0 @@
-export const devServer = {
-    proxy: {
-        '/api/v1': {
-            target: 'http://localhost:5000'
-        }
-    }
-};

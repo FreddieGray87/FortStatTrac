@@ -5,9 +5,9 @@
       <div class="form-group">
         <label for="platform">Platform</label>
         <select name="platform" id="platform" v-model="platform">
-          <option value="psn">PS4</option>
+          <option value="psn">Playstation</option>
           <option value="xbl">Xbox</option>
-          <option value="origin">PC</option>
+          <option value="Origin">Origin</option>
         </select>
       </div>
       <div class="form-group">
@@ -17,7 +17,7 @@
           name="text"
           v-model="gamertag"
           id="gamertag"
-          placeholder="Enter Gamertag or Epic ID"
+          placeholder="Enter GamerTag or Epic ID"
         />
       </div>
       <div class="form-group">
@@ -42,7 +42,7 @@ export default {
   methods: {
     onSubmit() {
       if (!this.gamertag) {
-        this.$toasted.show("Please enter a gamertag!", {
+        this.$toasted.show("Please enter a gamertag", {
           duration: 3000,
           icon: "gamepad"
         });
