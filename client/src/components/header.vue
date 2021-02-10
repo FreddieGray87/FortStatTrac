@@ -21,7 +21,7 @@ img {
 }
 @media (max-width: 700px) {
   img {
-    display: block;
+    display: flex;
     margin: auto;
   }
 }
